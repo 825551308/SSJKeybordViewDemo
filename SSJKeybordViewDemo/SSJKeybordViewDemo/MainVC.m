@@ -47,7 +47,8 @@
         _keybordView.placeholderValue = @"我要回复";
         [self.view addSubview:_keybordView];
     }
-    
+    /**< 这里可以关闭对话框 */
+    [self alertViewForTime:@"" alertMessage:@"觉得写的还不错的话  麻烦gitHub上给点个赞 谢谢亲了...... &(^v^)&" time:@"5.0"];
 }
 
 
@@ -172,5 +173,42 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
+}
+
+
+
+
+//消息框  一定时间后自动消失
+- (void)alertViewForTime:(NSString *)showMessage   alertMessage:(NSString *)alertMessage  time:(NSString *)_time{
+    NSLog(@"接收的message:%@",showMessage);
+    if(showMessage==nil){
+        showMessage=@"";
+    }
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"YOur Message"
+                                                    message:showMessage                delegate:self cancelButtonTitle:nil otherButtonTitles:nil, nil];
+    //设置标题与信息，通常在使用frame初始化AlertView时使用
+    if([showMessage isEqualToString:@""]){
+        alert.title = @"消息框";
+    }else{
+        alert.title=showMessage;
+    }
+    alert.message = [NSString stringWithFormat:@"%@",alertMessage];
+    //这个属性继承自UIView，当一个视图中有多个AlertView时，可以用这个属性来区分
+    alert.tag = 0;
+    //只读属性，看AlertView是否可见
+    NSLog(@"%d",alert.visible);
+    [alert show];
+    [NSTimer scheduledTimerWithTimeInterval:[_time floatValue]
+                                     target:self
+                                   selector:@selector(dismissAlert:)
+                                   userInfo:[NSDictionary dictionaryWithObjectsAndKeys:alert, @"alert", @"testing ", @"key" ,nil]  //如果不用传递参数，那么可以将此项设置为nil.
+                                    repeats:NO];
+    return;
+}
+
+//定时器调用－－关闭对话框
+-(void) dismissAlert:(NSTimer *)timer{
+    UIAlertView *alert = [[timer userInfo]  objectForKey:@"alert"];
+    [alert dismissWithClickedButtonIndex:0 animated:YES];
 }
 @end
