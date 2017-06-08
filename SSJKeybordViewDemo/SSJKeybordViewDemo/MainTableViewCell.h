@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 static NSString  * const mainTableViewCellIdent = @"MainTableViewCellIdent";
 @interface MainTableViewCell : UITableViewCell
-@property (nonatomic,weak) IBOutlet UILabel *titleLabel;
 
+/** 新cell内容 */
 - (void)updateCell:(NSString *)message;
 @end

@@ -212,7 +212,6 @@ static UIView *recordAnimateBackgroundWindowView;//recordAnimateView的背景vie
 
 #pragma mark -- set方法
 - (void)setFrame:(CGRect)frame{
-    NSLog(@"%f",App_Height);
     if (_isShowMoreEditing > 0) {//如果是加号操作 不需要改变输入框的frame
         frame.origin.y = (App_Height-64)-self.keyboardHeight-self.currentFrameHeight;
     }else{

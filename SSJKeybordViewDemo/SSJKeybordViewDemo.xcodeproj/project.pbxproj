@@ -885,7 +885,7 @@
 				TargetAttributes = {
 					9C179FAC1EE85A6200BAF07C = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 8D36WP6M3N;
+						DevelopmentTeam = Z4E4QAZTTP;
 						ProvisioningStyle = Automatic;
 					};
 					9C179FC51EE85A6200BAF07C = {
@@ -1282,13 +1282,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8D36WP6M3N;
 				INFOPLIST_FILE = SSJKeybordViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-licucore";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jss.SSJKeybordViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jss.SSJKeybordViewDemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1296,13 +1299,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8D36WP6M3N;
 				INFOPLIST_FILE = SSJKeybordViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-licucore";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jss.SSJKeybordViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jss.SSJKeybordViewDemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -1371,6 +1377,7 @@
 				9C179FDC1EE85A6200BAF07C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C179FDD1EE85A6200BAF07C /* Build configuration list for PBXNativeTarget "SSJKeybordViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -1379,6 +1386,7 @@
 				9C179FDF1EE85A6200BAF07C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C179FE01EE85A6200BAF07C /* Build configuration list for PBXNativeTarget "SSJKeybordViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -1387,6 +1395,7 @@
 				9C179FE21EE85A6200BAF07C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
