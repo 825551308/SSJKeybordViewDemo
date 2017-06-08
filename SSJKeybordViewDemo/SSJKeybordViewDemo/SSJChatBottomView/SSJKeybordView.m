@@ -535,6 +535,13 @@ static UIView *recordAnimateBackgroundWindowView;//recordAnimateView的背景vie
     self.keyBoardUIViewLayoutHeight.constant = inputViewHeight;
     [self.keyBoardUIView layoutIfNeeded];
     
+    if ([self.delegate respondsToSelector:@selector(sendText:)]) {
+        [self.delegate sendText:[[SSJKeybordViewConfig shareManager] emojiFlagArrIOSToEmojiFlagArr:self.inputTextView.text]];
+        [self.inputTextView setContentInset:UIEdgeInsetsMake(0, -1, -4, 1)];//设置UITextView的内边距
+    }else{
+        NSLog(@"未实现代理方法:sendText");
+    }
+    
     self.inputTextView.text = @"";
     self.inputTextView.PlaceholderLabel.hidden = FALSE;
     _range = NSMakeRange(self.inputTextView.text.length,0);
@@ -544,13 +551,6 @@ static UIView *recordAnimateBackgroundWindowView;//recordAnimateView的背景vie
     }
     
     [self.atMuArray removeAllObjects];
-    
-    if ([self.delegate respondsToSelector:@selector(sendText:)]) {
-        [self.delegate sendText:[[SSJKeybordViewConfig shareManager] emojiFlagArrIOSToEmojiFlagArr:self.inputTextView.text]];
-        [self.inputTextView setContentInset:UIEdgeInsetsMake(0, -1, -4, 1)];//设置UITextView的内边距
-    }else{
-        NSLog(@"未实现代理方法:sendText");
-    }
 }
 
 
