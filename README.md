@@ -1,7 +1,7 @@
 # SSJKeybordViewDemo
-
+![](https://github.com/825551308/SSJKeybordViewDemo/blob/master/SSJKeybordViewGif.gif)
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-
+## 地址: https://github.com/825551308/SSJKeybordViewDemo
 ## 使用方式
 ```
 - (void)viewDidAppear:(BOOL)animated{<br/>
