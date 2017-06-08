@@ -528,12 +528,7 @@ static UIView *recordAnimateBackgroundWindowView;//recordAnimateView的背景vie
 
 #pragma mark -- 表情栏发送按钮
 - (void)senBtnTouchUpInSide:(id)sender{
-    if ([self.delegate respondsToSelector:@selector(sendText:)]) {
-        [self.delegate sendText:[[SSJKeybordViewConfig shareManager] emojiFlagArrIOSToEmojiFlagArr:self.inputTextView.text ] ];
-    }else{
-        NSLog(@"未实现代理方法:sendText");
-    }
-    /**< 恢复selfmoren高度 */
+    /**< 恢复keyBoardUIView高度 */
     self.currentFrameHeight = inputViewHeight;
     [self recoverInputHeight];
     [self endEditing:YES];
@@ -544,11 +539,18 @@ static UIView *recordAnimateBackgroundWindowView;//recordAnimateView的背景vie
     self.inputTextView.PlaceholderLabel.hidden = FALSE;
     _range = NSMakeRange(self.inputTextView.text.length,0);
     
-    /*当点击发送的时候 不需要收回下面的高度*/
-    //    [self resetAllButtonState];
-    //    self.keyboardHeight = 0;
-    //    self.frame = CGRectMake(0, App_Height-64-self.keyboardHeight-64, App_Width, inputViewHeight);
+    for (UIView *childView in self.keyBoardUIView.subviews) {
+        [childView layoutIfNeeded];
+    }
+    
     [self.atMuArray removeAllObjects];
+    
+    if ([self.delegate respondsToSelector:@selector(sendText:)]) {
+        [self.delegate sendText:[[SSJKeybordViewConfig shareManager] emojiFlagArrIOSToEmojiFlagArr:self.inputTextView.text]];
+        [self.inputTextView setContentInset:UIEdgeInsetsMake(0, -1, -4, 1)];//设置UITextView的内边距
+    }else{
+        NSLog(@"未实现代理方法:sendText");
+    }
 }
 
 

@@ -167,7 +167,6 @@
 
 - (void)sendText:(NSString *)text{
     NSLog(@"发送了:%@",text);
-    [self.keybordView recoverInputHeight];
     [self.chatTabeleViewVC joinToList:text];
 }
 
