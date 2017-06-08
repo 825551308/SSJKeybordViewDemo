@@ -184,6 +184,7 @@
 		9C17A1651EE85B0500BAF07C /* SSJShowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C17A0C01EE85B0500BAF07C /* SSJShowView.xib */; };
 		9C17A1661EE85B0500BAF07C /* SSJRecordAnimateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C17A0C21EE85B0500BAF07C /* SSJRecordAnimateView.m */; };
 		9C17A1671EE85B0500BAF07C /* UIButton+EnlargeTouchArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C17A0C41EE85B0500BAF07C /* UIButton+EnlargeTouchArea.m */; };
+		A550D3211EE945CE00D97E74 /* SSJKeybordViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A550D3201EE945CE00D97E74 /* SSJKeybordViewConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -427,6 +428,8 @@
 		9C17A0C21EE85B0500BAF07C /* SSJRecordAnimateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJRecordAnimateView.m; sourceTree = "<group>"; };
 		9C17A0C31EE85B0500BAF07C /* UIButton+EnlargeTouchArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EnlargeTouchArea.h"; sourceTree = "<group>"; };
 		9C17A0C41EE85B0500BAF07C /* UIButton+EnlargeTouchArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EnlargeTouchArea.m"; sourceTree = "<group>"; };
+		A550D31F1EE945CE00D97E74 /* SSJKeybordViewConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJKeybordViewConfig.h; sourceTree = "<group>"; };
+		A550D3201EE945CE00D97E74 /* SSJKeybordViewConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJKeybordViewConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -545,6 +548,8 @@
 				9C17A0B11EE85B0500BAF07C /* SSJKeybordView.h */,
 				9C17A0B21EE85B0500BAF07C /* SSJKeybordView.m */,
 				9C17A0B31EE85B0500BAF07C /* SSJKeybordView.xib */,
+				A550D31F1EE945CE00D97E74 /* SSJKeybordViewConfig.h */,
+				A550D3201EE945CE00D97E74 /* SSJKeybordViewConfig.m */,
 				9C17A0B41EE85B0500BAF07C /* tools */,
 			);
 			path = SSJChatBottomView;
@@ -1103,6 +1108,7 @@
 				9C17A0C71EE85B0500BAF07C /* ExpressionEvePageView.m in Sources */,
 				9C17A1571EE85B0500BAF07C /* DNUnAuthorizedTipsView.m in Sources */,
 				9C17A1491EE85B0500BAF07C /* DNPhotoBrowser.m in Sources */,
+				A550D3211EE945CE00D97E74 /* SSJKeybordViewConfig.m in Sources */,
 				9C17A15B1EE85B0500BAF07C /* WebViewJavascriptBridge_JS.m in Sources */,
 				9C17A0CA1EE85B0500BAF07C /* SSGiftCollectionViewFlowLayout.m in Sources */,
 				9C17A1531EE85B0500BAF07C /* DNBadgeLabel.m in Sources */,

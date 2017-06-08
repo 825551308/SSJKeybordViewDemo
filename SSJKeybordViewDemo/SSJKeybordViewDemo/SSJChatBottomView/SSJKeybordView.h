@@ -5,7 +5,6 @@
 //  Created by 金汕汕 on 16/9/11.
 //  Copyright © 2016年 ccs. All rights reserved.
 //
-
 #import <UIKit/UIKit.h>
 #import "PlaceholderTextView.h"
 
@@ -17,42 +16,8 @@
 #import "SSGiftCollectionViewFlowLayout.h"
 
 #import "ExpressionEvePageView.h"
+#import "SSJKeybordViewConfig.h"
 
-/** 输入框高度 */
-static CGFloat const inputViewHeight = 50;
-static CGFloat const inputViewHeightMax = 80;
-
-static CGFloat const keyBoardHeight = 216;
-
-static CGFloat const expressionScrollerViewHeight = 176;
-static CGFloat const expressionSendButtonWidth = 40;
-static CGFloat const expressionSendButtonHeight = 30;
-
-static CGFloat const expressionBtnWidth = 40;
-static CGFloat const animateWithDurationVal = 0.25;
-
-//屏幕大小尺寸
-#define screen_width [UIScreen mainScreen].bounds.size.width
-/**
- *  IM模块／聊天键盘     当用户输入@之后 选择了人员之后 调用此通知 告诉聊天键盘人员的name
- */
-#define NoticeAppContainerSSJKeybordView_selectedName @"appContainerNoticeAppContainerSSJKeybordView_selectedName"
-
-typedef NS_ENUM(NSUInteger, ShowMoreType) {
-    /** 默认状态:键盘 表情等收回  输入框在底部 */
-    ShowMoreTypeOfOff = 0,
-    /** 模式一：键盘弹出 */
-    ShowMoreTypeOfOne = 1,
-    /** 模式二：键盘收回    选择界面出现 */
-    ShowMoreTypeOfTwo = 2,
-    /** 模式三：表情键盘弹出 */
-    ShowMoreTypeOfKeyBoard = 3,
-    /** 模式四：录音键盘弹出 */
-    ShowMoreTypeOfRecord = 4
-};
-
-#define App_Height [[UIScreen mainScreen] bounds].size.height //主屏幕的高度
-#define App_Width  [[UIScreen mainScreen] bounds].size.width  //主屏幕的宽度
 
 @protocol SSJKeybordViewDelegate <NSObject>
 /** 更新聊天tableview的bottom约束 */
@@ -118,17 +83,6 @@ typedef NS_ENUM(NSUInteger, ShowMoreType) {
 
 + (NSDictionary *)emojis;
 @end
-
-#pragma mark -- 文本信息类
-@interface TextSegment : NSObject
-
-@property (nonatomic, copy) NSString *text;
-@property (nonatomic, assign) NSRange range;
-@property (nonatomic, assign, getter=isSpecial) BOOL special;
-@property (nonatomic, assign, getter=isEmotion) BOOL emotion;
-
-@end
-
 
 #pragma mark -- 使用方式
 /*
