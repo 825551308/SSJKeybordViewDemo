@@ -1,5 +1,5 @@
 # SSJKeybordViewDemo
-
+![](https://github.com/825551308/SSJKeybordViewDemo/blob/master/SSJKeybordViewGif.gif)
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 ## 使用方式
