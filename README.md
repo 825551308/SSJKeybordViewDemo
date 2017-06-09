@@ -53,8 +53,9 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
     /* 点击发送按钮 */
     - (void)sendText:(NSString *)text{
 
-    }
-
+    }
+## .针对错误：“_u_errorNmae”,referenced from:
+### . 解决方案：Build Settings 搜索 other Linker Flags 添加 -licucore即可
 
 ## PS:
 1、所有表情匹配文字以及匹配的图片名字都在emoji.json这个文件里；
