@@ -153,7 +153,7 @@
 		A57520AD1EEA353D00151C02 /* SSJKeybordViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A575201A1EEA353D00151C02 /* SSJKeybordViewConfig.m */; };
 		A57520AE1EEA353D00151C02 /* PCRPlayMusicFile.m in Sources */ = {isa = PBXBuildFile; fileRef = A575201D1EEA353D00151C02 /* PCRPlayMusicFile.m */; };
 		A57520AF1EEA353D00151C02 /* PCRRecordTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A575201F1EEA353D00151C02 /* PCRRecordTool.m */; };
-		A57520B01EEA353D00151C02 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = A57520211EEA353D00151C02 /* RegexKitLite.m */; };
+		A57520B01EEA353D00151C02 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = A57520211EEA353D00151C02 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A57520B11EEA353D00151C02 /* JZMTBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = A57520241EEA353D00151C02 /* JZMTBtnView.m */; };
 		A57520B21EEA353D00151C02 /* SSJShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = A57520261EEA353D00151C02 /* SSJShowView.m */; };
 		A57520B31EEA353D00151C02 /* SSJShowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A57520271EEA353D00151C02 /* SSJShowView.xib */; };
