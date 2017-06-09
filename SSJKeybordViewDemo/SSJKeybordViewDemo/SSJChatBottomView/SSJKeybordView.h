@@ -99,5 +99,45 @@
 }
 */
 
+#pragma mark -- 需要实现的代理
+
+// @某人回调
+//- (void)whriteAtChar{
+//    
+//}
+//
+//// 取消@某人
+//- (void)atRemoved:(NSString *)removedName{
+//    
+//}
+////图库
+//- (void)chooseFromAlbum {
+//    [self.keybordView recoverInputHeight];
+//}
+//
+////拍照
+//- (void)openCamera {
+//}
+//
+//#pragma mark --  相机回调
+//- (void)imagePickerController:(UIImagePickerController *)picker
+//didFinishPickingImage:(UIImage *)image
+//editingInfo:(NSDictionary *)editingInfo{
+//}
+//
+//// 语音回调
+//- (void)recordEnd:(NSString *)recordPath recordTime:(NSString *)recordTime{
+//}
+//
+///* 更新聊天tableview 底部约束 */
+//- (void)updateChatTbBottom:(CGFloat)val{
+//    
+//}
+//
+///* 点击发送按钮 */
+//- (void)sendText:(NSString *)text{
+//    
+//}
+
 /******** 觉得写的还不错的话  麻烦给点个赞 谢谢亲了...... &(^v^)&   *********/
 
